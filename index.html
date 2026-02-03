@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meredith Family Grind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & font */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background-color: #fdfdfd; color: #333; line-height: 1.6; }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #1a73e8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo img {
+      height: 50px;
+      width: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      padding: 0.5rem 0.8rem;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #1a73e8;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    /* Hero Section */
+    #home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem;
+      background: linear-gradient(to right, #eef3fb, #f9f9f9);
+      text-align: center;
+    }
+
+    #home img {
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+
+    #home h1 {
+      font-size: 2.8rem;
+      color: #1a73e8;
+      margin-bottom: 1rem;
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    #home .cta-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #ffcc00;
+      color: #1a73e8;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    #home .cta-btn:hover {
+      background-color: #ffc107;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Section styling */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      color: #1a73e8;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #1a73e8;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    /* Menu Styling */
+    .menu-category {
+      margin-top: 2rem;
+    }
+
+    .menu-category h3 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      color: #1a73e8;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px dashed #eee;
+      font-weight: 500;
+      color: #444;
+    }
+
+    .menu-item span:first-child {
+      max-width: 70%;
+    }
+
+    .menu-item span:last-child {
+      text-align: right;
+      min-width: 50px;
+    }
+
+    /* Location Styling */
+    #location p {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    #location iframe {
+      margin-top: 1rem;
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Get Directions Button */
+    .directions-btn {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.8rem 1.5rem;
+      background-color: #ffcc00;
+      color: #1a73e8;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .directions-btn:hover {
+      background-color: #ffc107;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Reviews */
+    .reviews {
+      color: #ffb400;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a73e8;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      #home h1 { font-size: 2.2rem; }
+      #home img { height: 120px; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="61F9B0DC-B741-44D0-8E85-971B395D962C.png" alt="Meredith Family Grind Logo">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <img src="61F9B0DC-B741-44D0-8E85-971B395D962C.png" alt="Meredith Family Grind Logo">
+    <h1>Meredith Family Grind</h1>
+    <p>5.043 reviews · $1–10 per person · Coffee Shop</p>
+    <p>Drive-through · Delivery</p>
+    <div class="reviews">⭐⭐⭐⭐⭐</div>
+    <a href="#location" class="cta-btn">Visit Us Today</a>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Menu</h2>
+
+    <!-- Coffee -->
+    <div class="menu-category">
+      <h3>COFFEE</h3>
+      <div class="menu-item"><span>Coldbrew</span><span>$4.00</span></div>
+      <div class="menu-item"><span>Drip Coffee</span><span>$2.00</span></div>
+      <div class="menu-item"><span>Café Au Lait</span><span>$3.25 - $3.75</span></div>
+    </div>
+
+    <!-- Espresso Drinks -->
+    <div class="menu-category">
+      <h3>ESPRESSO DRINKS</h3>
+      <div class="menu-item"><span>Affogato</span><span>$6.00</span></div>
+      <div class="menu-item"><span>Americano</span><span>$3.25 / $3.75</span></div>
+      <div class="menu-item"><span>Cappuccino (8oz)</span><span>$4.00</span></div>
+      <div class="menu-item"><span>Cortado (4oz)</span><span>$3.50</span></div>
+      <div class="menu-item"><span>Espresso (4oz)</span><span>$3.00</span></div>
+      <div class="menu-item"><span>Latte</span><span>$4.00 / $4.50</span></div>
+      <div class="menu-item"><span>Mocha</span><span>$5.00 / $5.50</span></div>
+    </div>
+
+    <!-- Non-Coffee Drinks -->
+    <div class="menu-category">
+      <h3>NON-COFFEE DRINKS</h3>
+      <div class="menu-item"><span>Chai Tea Latte</span><span>$5.00 / $5.50</span></div>
+      <div class="menu-item"><span>Iced Tea</span><span>$2.00</span></div>
+      <div class="menu-item"><span>Matcha Latte</span><span>$5.00 / $5.50</span></div>
+      <div class="menu-item"><span>Lemonade</span><span>$2.00</span></div>
+      <div class="menu-item"><span>Hot Chocolate 12oz</span><span>$4.00</span></div>
+    </div>
+
+    <!-- Syrups & Sauces -->
+    <div class="menu-category">
+      <h3>SYRUPS & SAUCES</h3>
+      <div class="menu-item"><span>Caramel, Blue Cotton Candy, Hazelnut, Caramel Sauce</span></div>
+      <div class="menu-item"><span>Vanilla, Toasted Marshmello, Pistachio, Butter Pecan</span></div>
+      <div class="menu-item"><span>Peppermint, Cupcake, Irish Cream, Raspberry</span></div>
+      <div class="menu-item"><span>White & Dark Mocha Sauce, Peach, Lavender, Strawberry</span></div>
+      <div class="menu-item"><span>Sugar-Free: Toasted Marshmallow, Vanilla, Hazelnut, Caramel, Unicorn, Strawberry Lemonade, Blueberry Lavender</span></div>
+      <div class="menu-item"><span>Sweet Cold Foam</span><span>$0.50</span></div>
+    </div>
+
+    <!-- Alternative Milks & Extras -->
+    <div class="menu-category">
+      <h3>ALTERNATIVE MILKS & EXTRAS</h3>
+      <div class="menu-item"><span>Oat Milk</span><span>$0.75</span></div>
+      <div class="menu-item"><span>Almond Milk</span><span>$0.75</span></div>
+      <div class="menu-item"><span>Add an Espresso Shot</span><span>Single $0.75, Almond $0.75</span></div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location">
+    <h2>Location</h2>
+    <p>3933 Clarks River Rd, Paducah, KY 42003</p>
+    <p>Closed · Opens 5 AM</p>
+    <p>Phone: (270) 331-5523</p>
+    <p>Plus Code: 2CWV+H3 Paducah, Kentucky</p>
+
+    <!-- Get Directions Button -->
+    <a href="https://goo.gl/maps/your-google-map-link" target="_blank" class="btn directions-btn">Get Directions</a>
+
+    <!-- Embed Google Map -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.847123456789!2d-88.619876!3d37.083456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8873abcdef123456%3A0xabcdef123456!2s3933%20Clarks%20River%20Rd%2C%20Paducah%2C%20KY%2042003!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus" 
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Meredith Family Grind · All Rights Reserved
+  </footer>
+
+</body>
+</html>
